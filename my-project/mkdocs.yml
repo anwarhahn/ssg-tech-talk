@@ -1,1 +1,23 @@
 site_name: My Docs
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.annotate
+extra_css:
+  - stylesheets/home.css
+markdown_extensions:
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+copyright: Copyright &copy; 2022
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Second: second.md

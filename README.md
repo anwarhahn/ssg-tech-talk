@@ -7,6 +7,7 @@ _References_
 1. https://github.com/pyenv/pyenv
 2. https://www.mkdocs.org/getting-started/
 3. https://firebase.google.com/docs/hosting
+4. https://github.com/squidfunk/mkdocs-material
 
 # Goals
 
@@ -28,10 +29,11 @@ mkdir ssg-tech-talk && cd ssg-tech-talk
 mkvirtualenv ssg-tech-talk --python=/Users/anwarhahn/.pyenv/versions/3.7.2/bin/python
 ```
 
-3. Install `mkdocs`.
+3. Install `mkdocs` and `mkdocs-material`.
 
 ```bash
 pip install mkdocs
+pip install mkdocs-material
 ```
 
 4. Create a git repo.
@@ -112,3 +114,21 @@ firebase init
 ```bash
 mkdocs build && firebase deploy
 ```
+
+16. Change the theme https://github.com/squidfunk/mkdocs-material
+
+```bash
+pip install mkdocs-material
+```
+
+17. Add the following lines to `mkdocs.yml`:
+
+```yaml
+theme:
+  name: material
+```
+
+18. Review the other settings in `mkdocs.yml`.
+19. Consider adding a `Makefile`.
+20. Add some new pages and change the navigation layout.
+21. Add some additional CSS.
